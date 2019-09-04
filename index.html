@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Microsoft 365 Training Day：桌面部署</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+
+    </style>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <!-- <script src="./js/remScale.js"></script> -->
+</head>
+
+<body style="overflow-y: hidden;">
+    <div class="arrow">
+    </div>
+    <div id="dowebok">
+        <!-- 第一页  首页-->
+        <div class="section part1">
+            <img src="./images/part1_left_logo.png" alt="" id="part1_1">
+
+
+            <img src="./images/part1_top1.png" alt="" id="part1_2_1">
+            <img src="./images/part1_top2.png" alt="" id="part1_2_2">
+
+
+            <img src="./images/part1_yqh.png" alt="" id="part1_3">
+            <img src="./images/shanghai.png" alt="" id="part1_4">
+
+            <img src="./images/part1_dp.png" alt="" id="part1_5_1">
+            <img src="./images/part1_VS.png" alt="" id="part1_5_2">
+            <img src="./images/part1_hk.png" alt="" id="part1_5_3">
+        </div>
+        <!-- 第二页  课程页-->
+        <div class="section part2">
+            <img src="./images/part1_left_logo.png" alt="" id="part2_1">
+            <img src="./images/part1_left_logo.png" alt="" id="part1_1">
+            <img src="./images/part2_top1.png" id="part2_2_1">
+            <img src="./images/part2_top2.png" id="part2_2_2">
+            <img src="./images/part2_top3.png" id="part2_2_3">
+
+            <img src="./images/part2_content_bg.png" id="part2_3_1">
+            <img src="./images/part2_1.png " id="part2_3_2">
+            <img src="./images/part2_2.png" id="part2_3_3">
+
+            <img src="./images/part2_bottom_left.png " id="part2_4_1">
+            <img src="./images/part2_bottom_right.png " id="part2_4_2">
+
+
+        </div>
+        <!-- 第三页  报名页-->
+        <div class=" section part3 ">
+            <img src="./images/part1_left_logo.png" alt="" id="part3">
+            <img src="./images/part1_left_logo.png" alt="" id="part1_1">
+
+
+            <img src="./images/part3_hy.png" alt=" " id="part3_1">
+
+            <img src="./images/part3_sj.png" alt=" " id="part3_2">
+            <img src="./images/part3_sjz.png " alt=" " id="part3_3">
+            <img src="./images/part3_hyap.png " alt=" " id="part3_4">
+            <img src="./images/part3_bottom.png" alt="" id="part3_5">
+        </div>
+        <!-- 第四页 现代化办公-->
+        <div class="section part4 ">
+            <img src="./images/part1_left_logo.png" alt="" id="part4">
+            <img src="./images/part1_left_logo.png " alt=" " id="part1_1">
+
+
+            <img src="./images/tzmb.png" alt=" " id="part4_1">
+            <img src="./images/IT.png" alt=" " id="part4_2_1">
+            <img src="./images/xinxigly.png" alt=" " id="part4_2_3">
+            <img src="./images/ywtdzg.png" alt=" " id="part4_2_2">
+
+
+
+            <img src="./images/bm.png" alt=" " id="part4_3">
+
+            <img src="./images/beijingzhan.png " alt=" " id="part4_4">
+            <a href="
+            https://aka.ms/Msbaselinesecurity-beijing"><img src="./images/ljbm.png" alt=" " id="part4_4_1"></a>
+
+
+            <img src="./images/shenzhenzhan.png" alt=" " id="part4_5">
+            <a href="
+            https://aka.ms/Msbaselinesecurity-shenzhen"> <img src="./images/ljbm.png" alt=" " id="part4_5_1"></a>
+
+
+
+            <img src="./images/shanghaizhan.png" alt=" " id="part4_6">
+            <a href="
+            https://aka.ms/Msbaselinesecurity-shanghai"><img src="./images/ljbm.png" alt=" " id="part4_6_1"></a>
+
+
+
+
+        </div>
+
+    </div>
+
+    <script src="./js/index.js "></script>
+    <script>
+        //rem
+        window.onresize = function() {
+            autoSetHtml();
+        }
+        autoSetHtml();
+
+        function autoSetHtml() {
+            // 基础值
+            var baseVal = 100;
+            // 设计稿的宽度
+            var pageWidth = 640;
+            // 当前屏幕的宽度
+            var width = document.querySelector("html ").offsetWidth;
+            // 计算fz
+            var fz = width * baseVal / pageWidth;
+            document.querySelector("html ").style.fontSize = fz + "px ";
+        }
+        window.onload = function() {
+            (function() {
+                var handle = function(event) {    
+                    event.preventDefault();
+                }
+                document.body.addEventListener('touchmove', handle, false);
+                document.body.removeEventListener('touchmove', handle, false);
+            })()
+        }
+    </script>
+</body>
+
+</html>
